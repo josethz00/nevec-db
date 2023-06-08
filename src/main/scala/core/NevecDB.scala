@@ -2,9 +2,9 @@ package core
 import scala.collection.mutable
 import java.nio.file._
 
-class NevecDB(dbName: String, dimensions: Int) {
-    val dbName: String = dbName
-    val dimensions: String = dimensions
+class NevecDB(name: String, dim: Int) {
+    val dbName: String = name
+    val dimensions: String = dim
 
     val path = Paths.get(s"$dbName.json")
     if (!Files.exists(path)) {
