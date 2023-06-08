@@ -3,7 +3,7 @@ import core.NevecDB
 
 object Hello extends Greeting with App {
   println(greeting)
-  val db = NevecDB("mytestdb", 1536)
+  val db = new NevecDB("mytestdb", 1536)
 }
 
 trait Greeting {
