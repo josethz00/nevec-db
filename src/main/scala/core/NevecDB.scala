@@ -4,7 +4,7 @@ import java.nio.file._
 
 class NevecDB(name: String, dim: Int) {
     val dbName: String = name
-    val dimensions: String = dim
+    val dimensions: Int = dim
 
     val path = Paths.get(s"$dbName.json")
     if (!Files.exists(path)) {
