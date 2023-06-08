@@ -46,3 +46,7 @@ INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (e
 2023.06.08 19:05:05 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
 2023.06.08 19:07:12 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
 2023.06.08 19:11:13 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.08 19:12:38 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.08 19:15:51 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.08 19:16:54 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.08 19:17:36 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
