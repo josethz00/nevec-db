@@ -23,7 +23,7 @@ class NevecDB {
             }
     }
 
-    def connect(name: String): Unit = {
-        Annoy.load[Int](s"./$name-input-vectors.ann")
+    def connect(name: String): Annoy[Int] = {
+        return Annoy.load[Int](s"./$name-results")
     }
 }
