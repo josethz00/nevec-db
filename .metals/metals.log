@@ -195,3 +195,6 @@ java.lang.IndexOutOfBoundsException: 0
 	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:51)
 
 2023.06.09 16:55:58 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 17:05:40 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/build.sbt[0m
+2023.06.09 17:07:54 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/build.sbt[0m
+2023.06.09 17:12:52 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/build.sbt[0m
