@@ -4,7 +4,7 @@ import java.nio.file._
 
 object FileUtil {
   def createFile(filename: String): Boolean = {
-        val path = Paths.get(s"$filename.json")
+        val path = Paths.get(filename)
         if (!Files.exists(path)) {
             Files.createFile(path)
             print("File created succesfully")
