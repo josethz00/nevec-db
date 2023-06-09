@@ -8,6 +8,7 @@ class NevecDB {
     var dbName: String = ""
     var dimensions: Int = 0
     var index: Option[Annoy[Int]] = None
+    var count: Int = 1
 
     def create(name: String, dimensions: Int): Unit = {
         this.dbName = name
@@ -25,5 +26,10 @@ class NevecDB {
 
     def connect(name: String): Annoy[Int] = {
         return Annoy.load[Int](s"./$name-results")
+    }
+
+    def insert(vector: Array[Float]): Unit = {
+        index.addItem(count, vector)
+        count += 1
     }
 }
