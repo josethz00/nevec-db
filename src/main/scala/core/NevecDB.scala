@@ -29,7 +29,13 @@ class NevecDB {
     }
 
     def insert(vector: Array[Float]): Unit = {
-        index.addItem(count, vector)
-        count += 1
+        index match {
+            case Some(index) => 
+                index.addItem(index, count, vector)
+                count += 1
+                index.save()
+            case None => 
+                println("Annoy index has not been initialized.")
+        }
     }
 }

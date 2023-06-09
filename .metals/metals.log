@@ -164,3 +164,34 @@ WARNING: Unmatched cancel notification for request id 5489
 2023.06.08 23:34:19 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/nevec/Main.scala[0m
 2023.06.08 23:45:10 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
 2023.06.08 23:45:13 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:39:58 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:40:11 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:42:33 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:43:22 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:45:16 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:45:29 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/nevec/Main.scala[0m
+Jun 09, 2023 4:45:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6111
+2023.06.09 16:45:29 WARN  Using indexes to guess the definition of NevecDB[0m
+2023.06.09 16:46:39 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:46:50 WARN  Using indexes to guess the definition of FileUtil[0m
+2023.06.09 16:48:03 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+Jun 09, 2023 4:48:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6191
+2023.06.09 16:48:19 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:50:06 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+2023.06.09 16:50:18 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
+Jun 09, 2023 4:55:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: 0
+java.lang.IndexOutOfBoundsException: 0
+	at scala.collection.LinearSeqOps.apply(LinearSeq.scala:131)
+	at scala.collection.LinearSeqOps.apply$(LinearSeq.scala:128)
+	at scala.collection.immutable.List.apply(List.scala:79)
+	at dotty.tools.dotc.util.Signatures$.countParams(Signatures.scala:501)
+	at dotty.tools.dotc.util.Signatures$.applyCallInfo(Signatures.scala:186)
+	at dotty.tools.dotc.util.Signatures$.computeSignatureHelp(Signatures.scala:94)
+	at dotty.tools.dotc.util.Signatures$.signatureHelp(Signatures.scala:63)
+	at scala.meta.internal.pc.MetalsSignatures$.signatures(MetalsSignatures.scala:21)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:51)
+
+2023.06.09 16:55:58 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala[0m
