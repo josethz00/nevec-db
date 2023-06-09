@@ -4,17 +4,26 @@ import scala.collection.mutable
 import annoy4s._
 import utils.FileUtil
 
-class NevecDB(name: String, dim: Int) {
-    val dbName: String = name
-    val dimensions: Int = dim
+class NevecDB {
+    var dbName: String = ""
+    var dimensions: Int = 0
+    var index: Option[Annoy[Int]] = None
 
-    val isDbFileCreated = FileUtil.createFile(s"$dbName.json")
+    def create(name: String, dimensions: Int): Unit = {
+        this.dbName = name
+        this.dimensions = dimensions
+        val isDbFileCreated = FileUtil.createFile(s"./$dbName.json")
 
-    val index: Option[Annoy[Int]] = 
-        if (isDbFileCreated) {
-            FileUtil.createFile(s"$dbName-input-vectors.ann")
-            Some(Annoy.create[Int](s"./$dbName-input-vectors.ann", 10, outputDir = s"./$dbName-results/", Angular))
-        } else {
-            None
-        }
+        index = 
+            if (isDbFileCreated) {
+                FileUtil.createFile(s"./$dbName-input-vectors.ann")
+                Some(Annoy.create[Int](s"./$dbName-input-vectors.ann", 10, outputDir = s"./$dbName-results/", Angular))
+            } else {
+                None
+            }
+    }
+
+    def connect(name: String): Unit = {
+        Annoy.load[Int](s"./$name-input-vectors.ann")
+    }
 }
