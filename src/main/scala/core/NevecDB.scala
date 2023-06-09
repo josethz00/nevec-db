@@ -13,9 +13,8 @@ class NevecDB(name: String, dim: Int) {
     val index: Option[Annoy[Int]] = 
         if (isDbFileCreated) {
             FileUtil.createFile(s"$dbName-input-vectors.ann")
-            Some(Annoy.create[Int](s"$dbName-input-vectors.ann", 10, outputDir = s"./$dbName-results/", Angular))
+            Some(Annoy.create[Int](s"./$dbName-input-vectors.ann", 10, outputDir = s"./$dbName-results/", Angular))
         } else {
             None
         }
-    print("aaaaaaaaaaaaa")
 }
