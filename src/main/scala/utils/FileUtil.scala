@@ -25,4 +25,8 @@ object FileUtil {
     }
     return new java.io.FileOutputStream(filename)
   }
+
+  def closeOutputStream(outputStream: java.io.FileOutputStream): Unit = {
+    outputStream.close()
+  }
 }

@@ -15,6 +15,7 @@ class NevecDB {
         this.dimensions = dimensions
 
         this.index = new FileOutputStream("hnswIndex.bin")
+        val outputStream = FileUtil.createOutputStream(s"./$name-results")
         hnswIndex.save(outputStream)
         outputStream.close()
     }

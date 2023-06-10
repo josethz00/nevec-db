@@ -241,3 +241,5 @@ WARNING: Unmatched cancel notification for request id 538
 2023.06.10 00:29:21 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/utils/FileUtil.scala
 2023.06.10 00:29:49 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/utils/FileUtil.scala
 2023.06.10 00:30:35 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/utils/FileUtil.scala
+2023.06.10 00:31:38 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/utils/FileUtil.scala
+2023.06.10 00:32:43 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
