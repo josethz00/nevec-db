@@ -14,4 +14,15 @@ object FileUtil {
         return false
     }
   }
+
+  def createOutputStream(filename: String): java.io.FileOutputStream = {
+    val path = Paths.get(filename)
+    if (!Files.exists(path)) {
+        Files.createFile(path)
+        println("File created succesfully")
+    } else {
+        println("A file with this name already exists")
+    }
+    return new java.io.FileOutputStream(filename)
+  }
 }
