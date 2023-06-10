@@ -13,15 +13,19 @@ class NevecDB {
     def create(name: String, dimensions: Int): Unit = {
         this.dbName = name
         this.dimensions = dimensions
-
-        this.index = new FileOutputStream("hnswIndex.bin")
-        val outputStream = FileUtil.createOutputStream(s"./$name-results")
-        hnswIndex.save(outputStream)
+        this.index = Some(HnswIndex[String, Array[Float], DataItem, Float](
+            dimensions = dimensions, 
+            distanceFunction = floatCosineDistance, 
+            maxItems = dataItems.size, 
+            m = 16, ef = 200, efConstruction = 200
+        ))
+        val outputStream = FileUtil.createOutputStream(s"./$name-hsnwIndex.bin")
+        this.index.save(outputStream)
         outputStream.close()
     }
 
     def connect(name: String): Annoy[Int] = {
-        return Annoy.load[Int](s"./$name-results")
+        return Annoy.load[Int](s"./$name-hsnwIndex.bin")
     }
 
     def insert(vector: Array[Float]): Unit = {
