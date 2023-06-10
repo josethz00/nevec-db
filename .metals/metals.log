@@ -198,3 +198,43 @@ java.lang.IndexOutOfBoundsException: 0
 2023.06.09 17:05:40 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/build.sbt[0m
 2023.06.09 17:07:54 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/build.sbt[0m
 2023.06.09 17:12:52 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/build.sbt[0m
+2023.06.09 23:59:43 INFO  Shutting down server[0m
+2023.06.09 23:59:43 INFO  shutting down Metals[0m
+2023.06.09 23:59:43 INFO  Exiting server[0m
+2023.06.10 00:07:41 INFO  Started: Metals version 0.11.12 in workspace '/home/jose/Documents/projects/Personal/nevec-db' for client Visual Studio Code 1.79.0.
+Jun 10, 2023 12:07:41 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Jun 10, 2023 12:07:41 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Jun 10, 2023 12:07:41 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Jun 10, 2023 12:07:42 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/home/jose/Documents/projects/Personal/nevec-db/.metals/metals (H2 2.1)
+Jun 10, 2023 12:07:42 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.064s)
+Jun 10, 2023 12:07:42 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Jun 10, 2023 12:07:42 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.06.10 00:07:43 INFO  time: initialize in 1.94s
+2023.06.10 00:07:51 WARN  Build server is not auto-connectable.
+2023.06.10 00:07:51 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:07:52 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/nevec/Main.scala
+2023.06.10 00:08:04 INFO  no build target found for /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/nevec/Main.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.06.10 00:08:09 INFO  time: code lens generation in 17s
+2023.06.10 00:08:10 INFO  time: code lens generation in 18s
+2023.06.10 00:11:57 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+Jun 10, 2023 12:23:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 197
+2023.06.10 00:23:18 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:23:48 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:23:56 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+Jun 10, 2023 12:23:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 256
+2023.06.10 00:24:03 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:24:19 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:24:42 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:27:47 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+Jun 10, 2023 12:28:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 538
+2023.06.10 00:28:38 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala

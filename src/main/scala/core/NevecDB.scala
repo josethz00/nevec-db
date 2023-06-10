@@ -1,27 +1,22 @@
 package core
 
 import scala.collection.mutable
-import annoy4s._
 import utils.FileUtil
+import com.github.jelmerk.knn.scalalike.hsnw._
 
 class NevecDB {
     var dbName: String = ""
     var dimensions: Int = 0
-    var index: Option[Annoy[Int]] = None
+    var index: Option[HnswIndex[String, Array[Float], DataItem, Float]] = None
     var count: Int = 1
 
     def create(name: String, dimensions: Int): Unit = {
         this.dbName = name
         this.dimensions = dimensions
-        val isDbFileCreated = FileUtil.createFile(s"./$dbName.json")
 
-        index = 
-            if (isDbFileCreated) {
-                FileUtil.createFile(s"./$dbName-input-vectors.ann")
-                Some(Annoy.create[Int](s"./$dbName-input-vectors.ann", 10, outputDir = s"./$dbName-results/", Angular))
-            } else {
-                None
-            }
+        this.index = new FileOutputStream("hnswIndex.bin")
+        hnswIndex.save(outputStream)
+        outputStream.close()
     }
 
     def connect(name: String): Annoy[Int] = {
