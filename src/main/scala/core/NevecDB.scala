@@ -2,7 +2,7 @@ package core
 
 import scala.collection.mutable
 import utils.FileUtil
-import com.github.jelmerk.knn.scalalike.hsnw._
+import com.github.jelmerk.knn.scalalike.hnsw._
 
 class NevecDB {
     var dbName: String = ""

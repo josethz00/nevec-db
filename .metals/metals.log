@@ -253,3 +253,8 @@ WARNING: Unmatched cancel notification for request id 538
 2023.06.10 00:36:30 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
 2023.06.10 00:36:38 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
 2023.06.10 00:37:01 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:38:29 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/nevec/Main.scala
+Jun 10, 2023 12:39:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1236
+2023.06.10 00:39:19 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
+2023.06.10 00:40:14 WARN  no build target for: /home/jose/Documents/projects/Personal/nevec-db/src/main/scala/core/NevecDB.scala
